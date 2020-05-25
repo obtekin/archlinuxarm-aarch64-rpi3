@@ -1,0 +1,6 @@
+#!/bin/bash
+/usr/bin/ping -W 30 -c 10 8.8.8.8
+/usr/bin/systemctl restart systemd-timesyncd
+/usr/bin/systemctl restart named
+/etc/fw/orbitfw.fw
+exit 0
