@@ -1,0 +1,12 @@
+gpu_mem=64
+dtoverlay=vc4-kms-v3d
+arm_control=0x200
+arm_freq=1200
+core_freq=400
+sdram_freq=450
+gpu_freq=250
+dtparam=sd_overclock=100
+enable_uart=1
+dtparam=audio=on
+audio_pwm_mode=2
+initramfs initramfs-linux.img followkernel
